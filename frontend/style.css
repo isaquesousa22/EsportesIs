@@ -1,0 +1,9 @@
+.menu a {
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: red;
+}
