@@ -5,51 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loja - EsporteIS</title>
 
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
- 
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class=" text-white">
+<body class="text-white" onload="mostrarUsuario()">
 
-
-  <nav class="p-4 bg-black border-b border-gray-700">
+  <nav class="p-4 bg-black border-b border-gray-700 flex justify-between items-center">
     <ul class="menu menu-horizontal flex gap-4 items-center">
       <li class="text-xl font-bold">
         <a class="btn btn-ghost normal-case text-xl text-white hover:text-red-500">EsporteIS</a>
       </li>
-      <li><a class="btn btn-ghost text-white hover:text-red-500" href="Tenis.html">Tênis</a></li>
+      <li><a class="btn btn-ghost text-white hover:text-red-500" href="tenis.html">Tênis</a></li>
       <li><a class="btn btn-ghost text-white hover:text-red-500" href="camisas.html">Camisas</a></li>
-       <a href="cadastro.html" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
-            Cadastrar
-        </a>
-
-           <a href="login.html" class="btn btn-primary">
-            Login
-         </a>
     </ul>
-       
-  </nav>
 
-      
+    <div class="flex items-center gap-3">
+
+      <span id="usuarioNome" class="text-white text-lg"></span>
+      <button onclick="logout()" class="btn btn-error btn-sm hidden" id="btnSair">Sair</button>
+
+      <a href="cadastro.html" class="btn btn-primary" id="btnCadastrar">Cadastrar</a>
+      <a href="login.html" class="btn btn-primary" id="btnLogin">Login</a>
+    </div>
+  </nav>
 
 
   <header class="text-center py-2 bg-red-600 text-white font-semibold rounded-xl mt-8">
     <p class="text-xl">Frete grátis na primeira compra 🚚</p>
   </header>
 
- 
+
   <div class="mt-8 flex justify-center">
-    <img class="rounded-xl w-[full]" src="img/fundo.png" alt="fundo">
-  </div> 
-
-  <div>
-
+    <img class="rounded-xl w-full max-w-5xl" src="img/fundo.png" alt="fundo">
   </div>
 
+ 
+  <header class="text-center py-2 bg-red-600 text-white font-semibold rounded-xl mt-8">
+    <p class="text-xl">Promoções</p>
+  </header>
+
+  <!-- Cards -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8 justify-items-center">
+    <div class="card bg-base-100 w-60 shadow-lg shadow-red-500/30 transition-transform duration-300 ease-in-out hover:scale-105">
+      <figure><img src="img_camisas/all_black.jpg" alt="Camisa Corinthians All Black" /></figure>
+      <div class="card-body">
+        <h2 class="card-title text-black">Camisa Corinthians All Black</h2>
+        <p class="text-gray-700">Edição especial em tecido respirável e design elegante.</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 w-60 shadow-lg shadow-red-500/30 transition-transform duration-300 ease-in-out hover:scale-105">
+      <figure><img src="img_camisas/all_black.jpg" alt="Camisa Corinthians All Black" /></figure>
+      <div class="card-body">
+        <h2 class="card-title text-black">Camisa Corinthians All Black</h2>
+        <p class="text-gray-700">Versão premium, ideal para colecionadores.</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 w-60 shadow-lg shadow-red-500/30 transition-transform duration-300 ease-in-out hover:scale-105">
+      <figure><img src="img_camisas/all_black.jpg" alt="Camisa Corinthians All Black" /></figure>
+      <div class="card-body">
+        <h2 class="card-title text-black">Camisa Corinthians All Black</h2>
+        <p class="text-gray-700">Modelo confortável e durável, edição limitada.</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 w-60 shadow-lg shadow-red-500/30 transition-transform duration-300 ease-in-out hover:scale-105">
+      <figure><img src="img_camisas/all_black.jpg" alt="Camisa Corinthians All Black" /></figure>
+      <div class="card-body">
+        <h2 class="card-title text-black">Camisa Corinthians All Black</h2>
+        <p class="text-gray-700">Desconto especial por tempo limitado.</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>

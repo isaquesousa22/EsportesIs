@@ -3,50 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja - EsporteIS</title>
-
+  <title>Cadastrar - EsporteIS</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-
-
 </head>
+
 <body class="min-h-screen flex items-center justify-center bg-red-950">
-    
 
-    <form class="mx-auto mt-8 w-lg" onsubmit="registrar(); return false;">
-        <h2 class="text-2xl text-white mb-4 text-center">Criar conta</h2>
+  <form class="w-96 p-6 bg-base-200 rounded-xl shadow-lg" onsubmit="registrar(); return false;">
+    <h2 class="text-2xl text-center text-white mb-6 font-bold">Criar Conta</h2>
 
-        <fieldset class="fieldset">
-            <legend class="fieldset-legend">Nome</legend>
-            <input id="nome" type="text" class="input" placeholder="Nome" />
-            <p class="label">campo obrigátorio</p>
-          </fieldset>
-          
-        <fieldset class="fieldset">
-            <legend class="fieldset-legend">Email</legend>
-            <input id="emailCadastro" type="text" class="input" placeholder="Seu email" />
-            <p class="label">
-            </p>
-          </fieldset>
+    <fieldset class="fieldset mb-4">
+      <legend class="fieldset-legend">Nome</legend>
+      <input id="nome" type="text" class="input input-bordered w-full" placeholder="Seu nome" required />
+    </fieldset>
 
-           <fieldset class="fieldset">
-            <legend class="fieldset-legend">Senha</legend>
-            <input id="senhaCadastro" type="password" class="input" placeholder="Senha" />
-            <p class="label">
-            </p>
-          </fieldset>
-          
-    
+    <fieldset class="fieldset mb-4">
+      <legend class="fieldset-legend">Email</legend>
+      <input id="emailCadastro" type="email" class="input input-bordered w-full" placeholder="Seu email" required />
+    </fieldset>
 
-          <div>
-            <a href="index.html" class="btn btn-neutral">Cancelar</a>
-            <button class="btn btn-primary">Salvar</button>
-          </div>
+    <fieldset class="fieldset mb-6">
+      <legend class="fieldset-legend">Senha</legend>
+      <input id="senhaCadastro" type="password" class="input input-bordered w-full" placeholder="Senha" required />
+    </fieldset>
 
-          <p id="mensagem" class="text-center text-white mt-4"></p>
-    </form>
+    <div class="flex justify-between">
+      <a href="index.html" class="btn btn-neutral">Cancelar</a>
+      <button class="btn btn-primary" type="submit">Salvar</button>
+    </div>
+
+    <p id="mensagem" class="text-center mt-4"></p>
+  </form>
+
   <script src="script.js"></script>
 </body>
-
-</html> 
+</html>
