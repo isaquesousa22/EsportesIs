@@ -1,0 +1,43 @@
+{
+  "clientes": [
+    {
+      "nome": "luisa",
+      "cpf": "3213241",
+      "endereco": "Rua Luís Pires",
+      "email": "isaqueluzsousa83@gmail.com",
+      "senha": "123456",
+      "id": "xKTta7i4HeE"
+    },
+    {
+      "nome": "Isaque Luz Sousa",
+      "cpf": "32423129",
+      "endereco": "Rua Luís Pires",
+      "email": "isaque@gmail.com",
+      "senha": "1234567",
+      "id": "AACcpqeTcn0"
+    }
+  ],
+
+
+  "admin": [
+    {
+      "id": "1",
+      "cpf": "8744556754",
+      "nome": "Isaque",
+      "sobrenome": "Sousa",
+      "dtNascimento": "2008-10-05",
+      "email": "isaque@email.com"
+    }
+  ],
+
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Camiseta",
+      "descricao": "Camiseta de algodão",
+      "preco": 50,
+      "quantidade": 10
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

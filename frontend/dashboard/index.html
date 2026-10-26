@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+
+
+
+<body>
+
+
+ <header>
+    <div class="menuLateral">
+        <!-- Botão de abrir -->
+        <button id="btn-abrir-menu" class="botao-menu" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Fundo escuro (escondido por padrão, exibido quando menu abre) -->
+        <div id="fundo-menu" class="fundo-menu" style="display: none;"></div>
+        <!-- Menu Lateral -->
+        <aside id="menu-lateral" class="menu-lateral">
+            <div class="menu-cabecalho">
+                <h2>ESPORTESLS</h2>
+                <!-- Botão fechar -->
+                <button id="btn-fechar-menu" class="botao-fechar" aria-label="Fechar menu">&times;</button>
+            </div>
+            <nav class="opcoes-menu">
+                <a href="perfil.html" class="btn"><span>♙</span> Meu perfil</a>
+                <a href="carrinho.html" class="btn">
+                    <span>🛒</span> Meu carrinho
+                    <span id="quantidade-carrinho" class="quantidade-carrinho">0</span>
+                </a>
+                <a href="pedidos.html" class="btn"><span>📦</span> Meus pedidos</a>
+                <a href="contato.html" class="btn">Contato</a>
+                <a href="sobre.html" class="btn">Sobre</a>
+                <a href="index.html" class="btn"><span>⌂</span> Início</a>
+
+                <!-- Botão de Sair que vamos programar -->
+                <button id="btn-sair" class="btn botao-sair">
+                    <span>🚪</span> Sair
+                </button>
+            </nav>
+        </aside>
+    </div>
+    <nav>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </nav>
+</header>
+
+    <main>
+
+        <div class="inicio">
+            <h1>Olá, <span id="nome-usuario">Visitante</span>! 👋</h1>
+            <p>Aqui você pode gerenciar suas informações e acessar recursos exclusivos.</p>
+
+        </div>
+
+
+        <div class="banner-container">
+            <img src="../img/fundo.png">
+
+            <div class="banner-conteudo">
+
+                <h2>NOVA COLEÇÃO 2026</h2>
+                <p>Garanta seus produtos favoritos com até 20% OFF!</p>
+
+                <a href="produtos.html" class=" btn-primary">Ver Produtos
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <section class="produtos">
+
+            <h2>Produtos em Destaque</h2>
+
+            <div class="produtos-container">
+                <div class="produto-card">
+                    <img src="../img_camisas/all_black.jpg" alt="Produto 1">
+                    <h3>Camisa Corinthians All Black</h3>
+                    <p>R$ 199,99</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <div class="produto-card">
+                    <img src="../img_camisas/all_black.jpg" alt="Produto 2">
+                    <h3>Camisa Corinthians All Black</h3>
+                    <p>R$ 199,99</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+
+                <div class="produto-card">
+                    <img src="../img_camisas/all_black.jpg" alt="Produto 3">
+                    <h3>Camisa Corinthians All Black</h3>
+                    <p>R$ 199,99</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>

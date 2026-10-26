@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastrar - EsporteIS</title>
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
@@ -19,6 +18,16 @@
       <input id="nome" type="text" class="input input-bordered w-full" placeholder="Seu nome" required />
     </fieldset>
 
+     <fieldset class="fieldset mb-4">
+      <legend class="fieldset-legend">CPF</legend>
+      <input id="cpf" type="text" class="input input-bordered w-full" placeholder="Seu CPF" required />
+    </fieldset>
+
+    <fieldset class="fieldset mb-4">
+      <legend class="fieldset-legend">Endereço</legend>
+      <input id="endereco" type="text" class="input input-bordered w-full" placeholder="Seu endereço" required />
+    </fieldset>
+
     <fieldset class="fieldset mb-4">
       <legend class="fieldset-legend">Email</legend>
       <input id="emailCadastro" type="email" class="input input-bordered w-full" placeholder="Seu email" required />
@@ -31,12 +40,12 @@
 
     <div class="flex justify-between">
       <a href="index.html" class="btn btn-neutral">Cancelar</a>
-      <button class="btn btn-primary" type="submit">Salvar</button>
+      <button class="btn btn-primary" type="submit" >Salvar</button>
     </div>
 
     <p id="mensagem" class="text-center mt-4"></p>
   </form>
 
-  <script src="script.js"></script>
+ <script src="js/cadastro.js"></script>
 </body>
 </html>
