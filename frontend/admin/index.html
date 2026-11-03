@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dracula">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="shortcut icon" href="/frontend/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+    <nav class="navbar bg-primary text-primary-content">
+
+        <div class="flex-1">
+            <a >
+                Painel Administrativo
+            </a>
+        </div>
+
+        <div class="flex-none">
+
+            <button class="btn " onclick="location.href='/frontend/index.html'">
+                Sair
+            </button>
+
+        </div>
+
+        <h1>Olá, <span id="nome-usuario">Visitante</span>! 👋</h1>
+
+    </nav>
+
+    <div>
+
+        <h1>
+
+            Bem-vindo Administrador
+
+        </h1>
+
+        <div>
+
+            <div class="stat ">
+
+                <div class="stat-title">
+                    Pendentes
+                </div>
+
+                <div class="stat-value " id="pendentes">
+                    0
+                </div>
+
+            </div>
+
+            <div class="stat ">
+
+                <div class="stat-title">
+                    Aprovados
+                </div>
+
+                <div class="stat-value " id="aprovados">
+                    0
+                </div>
+
+            </div>
+
+            <div class="stat ">
+
+                <div class="stat-title">
+                    Rejeitados
+                </div>
+
+                <div class="stat-value " id="rejeitados">
+                    0
+                </div>
+
+            </div>
+
+            <div class="stat ">
+
+                <div class="stat-title">
+                    Total
+                </div>
+
+                <div class="stat-value " id="total">
+                    0
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex">
+
+
+            <a href="CadastroAdmin.html" class="btn ">
+                Cadastrar Administrador
+            </a>
+
+             <a href="CadastroProdutos.html" class="btn ">
+                Cadastrar Produtos
+            </a>
+
+
+
+            <a href="todosParceiros.html" class="btn ">
+                Todos os Parceiros
+            </a>
+
+        </div>
+
+        <div class=" flex ">
+             <a href="suporte.html" class="btn">
+                Portal de suporte
+            </a>
+
+            <a href="perfil.html" class="btn">
+                Meu perfil
+            </a>
+        </div>
+
+    </div>
+    
+    <script type="module" src="/src/js/adminGuard.js"></script>
+    <script type="module" src="/src/js/admim.js"></script>
+    
+
+</body>
+
+</html>

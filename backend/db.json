@@ -17,8 +17,6 @@
       "id": "AACcpqeTcn0"
     }
   ],
-
-
   "admin": [
     {
       "id": "1",
@@ -27,9 +25,16 @@
       "sobrenome": "Sousa",
       "dtNascimento": "2008-10-05",
       "email": "isaque@email.com"
+    },
+    {
+      "nome": "isaac",
+      "cpf": "13436903",
+      "endereco": "vyueqfgi8f",
+      "email": "isaac@gmail.com",
+      "senha": "7654321",
+      "id": "f29liKV"
     }
   ],
-
   "produtos": [
     {
       "id": "1",

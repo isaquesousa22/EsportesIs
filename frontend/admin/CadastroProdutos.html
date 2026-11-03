@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO PRODUTOS - ESPORTESls</title>
+</head>
+<body>
+    <form class="" onsubmit="cadastrar(); return false;">
+    <h2 class="text-2xl text-center text-white mb-6 font-bold">Criar Conta</h2>
+
+    <fieldset class="fieldset ">
+      <legend class="fieldset-legend">Nome</legend>
+      <input id="nome" type="text" class="input" placeholder="Seu nome" required />
+    </fieldset>
+
+     <fieldset class="fieldset ">
+      <legend class="fieldset-legend">CPF</legend>
+      <input id="cpf" type="text" class="input " placeholder="Seu CPF" required />
+    </fieldset>
+
+    <fieldset class="fieldset ">
+      <legend class="fieldset-legend">Endereço</legend>
+      <input id="endereco" type="text" class="input " placeholder="Seu endereço" required />
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <legend class="fieldset-legend">Email</legend>
+      <input id="emailCadastro" type="email" class="input " placeholder="Seu email" required />
+    </fieldset>
+
+    <fieldset class="fieldset ">
+      <legend class="fieldset-legend">Senha</legend>
+      <input id="senhaCadastro" type="password" class="input input-bordered w-full" placeholder="Senha" required />
+    </fieldset>
+
+    <div class="flex justify-between">
+      <a href="index.html" class="btn btn-neutral">Cancelar</a>
+      <button class="btn btn-primary" type="submit" >Salvar</button>
+    </div>
+
+    <p id="mensagem" class="text-center mt-4"></p>
+  </form>
+</body>
+</html>
