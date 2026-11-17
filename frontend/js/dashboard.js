@@ -30,3 +30,40 @@ btnFechar.addEventListener('click', ()=>{
     menuLateral.classList.remove('aberto');
     fundoMenu.style.display = 'none';
 });
+
+
+async function carregarVitrine() {
+    try {
+        const resposta = await fetch('http://localhost:3000/produtos');
+        const listaProdutos = await resposta.json();
+
+        const vitrine = document.getElementById('vitrine-produtos');
+        vitrine.innerHTML = ''; 
+
+        listaProdutos.forEach(produto => {
+            const card = `
+                <div class="produto">
+                    <div class="img">
+                        <img src="${produto.url}" alt="${produto.nome}">
+                    </div>
+                    <h3 class="titleProduto">${produto.nome}</h3>
+                    <p class="descricao"><strong>Descrição:</strong> ${produto.descricao}</p>
+                    <p class="preco">R$ ${produto.preco}</p>
+                    
+                    <button class="btn btn-comprar">Comprar</button>
+                    <button class="btn btn-carrinho" onclick="adicionarAoCarrinho('${produto.id}')">
+                        Carrinho
+                    </button>
+                </div>
+            `;
+
+            vitrine.innerHTML += card;
+        });
+
+    } catch (erro) {
+        console.error('Erro ao carregar vitrine:', erro);
+    }
+}
+
+// Chama a função ao carregar a página
+carregarVitrine();
