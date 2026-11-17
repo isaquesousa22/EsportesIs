@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a EsporteIS.">
+    <title>Sobre | EsporteIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+
+    <div class="announcement">
+        <p>Frete grátis na primeira compra</p>
+        <a href="index.html#destaques">Confira os destaques →</a>
+    </div>
+
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a class="brand" href="index.html">
+                Esporte<span>IS</span>
+            </a>
+
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="tenis.html">Tênis</a></li>
+                <li><a href="camisas.html">Camisas</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <div class="nav-actions" id="nav-actions">
+                <a href="login.html" class="button button--quiet">Entrar</a>
+                <a href="cadastro.html" class="button button--primary">Criar conta</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="inner-page">
+
+        <section class="inner-page-hero">
+            <p class="eyebrow">Conheça nossa loja</p>
+            <h1>Sobre a EsporteIS</h1>
+            <p>
+                Mais movimento para os seus melhores momentos.
+            </p>
+        </section>
+
+        <section class="about-content">
+
+            <div>
+                <p class="eyebrow">Nossa história</p>
+                <h2>Movimento que inspira</h2>
+
+                <p>
+                    A EsporteIS é uma loja virtual voltada para pessoas
+                    que gostam de esporte, conforto e estilo.
+                </p>
+
+                <p>
+                    Nosso objetivo é reunir produtos esportivos em um
+                    só lugar, facilitando a busca por artigos que
+                    acompanham diferentes atividades e estilos.
+                </p>
+            </div>
+
+            <div class="about-highlight">
+                <h2>O que você encontra aqui?</h2>
+
+                <p>
+                    Trabalhamos com categorias como camisas e tênis,
+                    oferecendo opções para diferentes momentos,
+                    dentro e fora das atividades esportivas.
+                </p>
+
+                <a href="index.html#categorias" class="button button--primary">
+                    Explorar categorias
+                </a>
+            </div>
+
+        </section>
+
+        <section class="about-message">
+            <p class="eyebrow">EsporteIS</p>
+            <h2>Seu próximo desafio começa aqui.</h2>
+            <p>
+                Encontre seus produtos e acompanhe cada treino,
+                jogo e conquista.
+            </p>
+            <a href="index.html#destaques" class="button button--light">
+                Ver produtos
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand brand--footer" href="index.html">
+            Esporte<span>IS</span>
+        </a>
+
+        <p>Mais movimento para os seus melhores momentos.</p>
+
+        <nav aria-label="Links do rodapé">
+            <a href="tenis.html">Tênis</a>
+            <a href="camisas.html">Camisas</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <small>&copy; 2026 EsporteIS. Todos os direitos reservados.</small>
+    </footer>
+    <script>
+    const usuario = localStorage.getItem('usuarioLogado');
+    const nav = document.getElementById('nav-actions');
+
+    if (usuario && nav) {
+        nav.innerHTML = `
+            <a class="button button--quiet" href="dashboard/index.html">
+                Meu painel
+            </a>
+
+            <button class="button button--primary" onclick="
+                localStorage.removeItem('usuarioLogado');
+                window.location.href='index.html';
+            ">
+                Sair
+            </button>
+        `;
+    }
+    </script>
+
+</body>
+</html>
