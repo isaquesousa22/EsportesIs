@@ -41,7 +41,8 @@
       "nome": "Camiseta",
       "descricao": "Camiseta de algodão",
       "preco": 50,
-      "quantidade": 10
+      "quantidade": 10,
+      "url": "https://example.com/camiseta.jpg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

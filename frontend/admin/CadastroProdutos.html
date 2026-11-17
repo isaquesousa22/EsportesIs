@@ -7,32 +7,32 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body class="form-page">
-    <form onsubmit="cadastrar(); return false;">
-    <h2>Criar Conta</h2>
+    <form onsubmit="cadastrarProduto(); return false;">
+    <h2>Cadastro de Produtos</h2>
 
     <fieldset>
       <legend>Nome</legend>
-      <input id="nome" type="text" placeholder="Seu nome" required />
+      <input id="nome" type="text" placeholder="Nome do produto" required />
     </fieldset>
 
      <fieldset>
-      <legend>CPF</legend>
-      <input id="cpf" type="text" placeholder="Seu CPF" required />
+      <legend>Quantidade</legend>
+      <input id="quantidade" type="text" placeholder="Quantidade do produto" required />
     </fieldset>
 
     <fieldset>
-      <legend>Endereço</legend>
-      <input id="endereco" type="text" placeholder="Seu endereço" required />
+      <legend>Preço</legend>
+      <input id="preco" type="text" placeholder="Preço do produto" required />
     </fieldset>
 
     <fieldset>
-      <legend>Email</legend>
-      <input id="emailCadastro" type="email" placeholder="Seu email" required />
+      <legend>Descrição</legend>
+      <input id="descricao" type="text" placeholder="Descrição do produto" required />
     </fieldset>
 
     <fieldset>
-      <legend>Senha</legend>
-      <input id="senhaCadastro" type="password" placeholder="Senha" required />
+      <legend>URL</legend>
+      <input id="url" type="text" placeholder="URL do produto" required />
     </fieldset>
 
     <div class="form-actions">
@@ -42,5 +42,7 @@
 
     <p id="mensagem"></p>
   </form>
+
+  <script src="/frontend/js/CadastroProdutos.js"></script>
 </body>
 </html>

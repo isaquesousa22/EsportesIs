@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="todosProdutos.css">
+    <title>Todos Produtos Cadastrados</title>
+</head>
+<body>
+    <div class="content-container">
+
+
+    <div class="cabecalho">
+        <div>
+            <h1 class="subtitulo">
+                ÁREA ADMINISTRATIVA
+            </h1>
+
+
+            <h1>Produtos</h1>
+            <p>
+                Gerencie os produtos cadastrados na plataforma.
+            </p>
+        </div>
+     
+          <a  href="cadastro-produtos.html" type="button" class=" btn btn-secondary">
+            + Novo produto
+         </a>
+
+        <a href="index.html" class=" btn btn-secondary">
+                voltar
+         </a>
+    </div>
+
+    <div class="tabela-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>quantidade</th>
+                    <th>preço</th>
+                    <th>descrição</th>
+                    
+                </tr>
+            </thead>
+           
+        <tbody id="corpo-tabela">
+           
+        </tbody>
+
+             
+        </table>
+    </div>
+</div>
+
+ <script src="/frontend/js/todosProdutos.js"></script>
+</body>
+</html>
