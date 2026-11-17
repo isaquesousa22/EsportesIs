@@ -15,14 +15,6 @@
       "email": "isaque@gmail.com",
       "senha": "1234567",
       "id": "AACcpqeTcn0"
-    },
-    {
-      "nome": "junio",
-      "cpf": "49887993865",
-      "endereco": "rua das montanhas ",
-      "email": "rfafe@senadc",
-      "senha": "54321",
-      "id": "eS6hQL5"
     }
   ],
   "admin": [
@@ -68,7 +60,14 @@
     }
   ],
   "produtos": [
-
+    {
+      "nome": "Aesics NYC GEL 2.0",
+      "descricao": "Tênis extremamente confortavel!",
+      "preco": 420,
+      "quantidade": 20,
+      "url": "https://asicsbr.vteximg.com.br/arquivos/ids/3864183/1203A383_119_SR_RT_GLOBAL.jpg?v=639130555866570000",
+      "id": 1
+    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }
