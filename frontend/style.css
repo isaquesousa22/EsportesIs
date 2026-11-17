@@ -543,3 +543,197 @@ input {
   margin: 18px 0 0;
   color: #455b3d;
 }
+
+/* sobr e contato aq*/
+
+.inner-page {
+    width: calc(100% - 40px);
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 60px 0 76px;
+}
+
+.inner-page-hero {
+    padding: 45px;
+    margin-bottom: 45px;
+    color: #fff;
+    background: #354a30;
+    border-radius: 8px;
+}
+
+.inner-page-hero .eyebrow {
+    color: #dce5ce;
+}
+
+.inner-page-hero h1 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.inner-page-hero > p:last-child {
+    margin-bottom: 0;
+    color: #e2e8dc;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+    margin-bottom: 45px;
+}
+
+.about-content > div {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #e5e8e1;
+    border-radius: 8px;
+}
+
+.about-content h2,
+.contact-information h2 {
+    margin-top: 0;
+    color: #283328;
+    font-size: 1.7rem;
+}
+
+.about-content p,
+.contact-information > p {
+    color: #687064;
+}
+
+.about-highlight {
+    background: #eef1eb !important;
+}
+
+.about-message {
+    padding: 36px;
+    color: #fff;
+    background: #455b3d;
+    border-radius: 8px;
+}
+
+.about-message .eyebrow {
+    color: #dce5ce;
+}
+
+.about-message h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.about-message > p:not(.eyebrow) {
+    color: #e2e8dc;
+}
+
+/* contato */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-information {
+    padding: 25px 0;
+}
+
+.contact-highlight {
+    margin-top: 30px;
+    padding: 24px;
+    background: #e8eddf;
+    border-radius: 8px;
+}
+
+.contact-highlight h3 {
+    margin-top: 0;
+    color: #354a30;
+}
+
+.contact-highlight p {
+    margin-bottom: 0;
+    color: #687064;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #e5e8e1;
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    margin: 0 0 12px;
+    color: #283328;
+}
+
+.contact-form label {
+    color: #414a3e;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    color: #252b25;
+    font: inherit;
+    border: 1px solid #d5dbd1;
+    border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #667b56;
+    outline: 2px solid rgba(102, 123, 86, 0.2);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+#contact-feedback {
+    color: #455b3d;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+    .site-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .about-content,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .inner-page-hero {
+        padding: 28px;
+    }
+
+    .inner-page-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-message h2 {
+        font-size: 1.6rem;
+    }
+}

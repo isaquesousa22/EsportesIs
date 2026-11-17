@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a EsporteIS.">
+    <title>Contato | EsporteIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+
+    <div class="announcement">
+        <p>Frete grátis na primeira compra</p>
+        <a href="index.html#destaques">Confira os destaques →</a>
+    </div>
+
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a class="brand" href="index.html">
+                Esporte<span>IS</span>
+            </a>
+
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="tenis.html">Tênis</a></li>
+                <li><a href="camisas.html">Camisas</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <div class="nav-actions" id="nav-actions">
+                <a href="login.html" class="button button--quiet">Entrar</a>
+                <a href="cadastro.html" class="button button--primary">Criar conta</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="inner-page">
+
+        <section class="inner-page-hero">
+            <p class="eyebrow">Estamos à disposição</p>
+            <h1>Entre em contato</h1>
+            <p>
+                Envie sua dúvida, sugestão ou mensagem para a EsporteIS.
+            </p>
+        </section>
+
+        <section class="contact-layout">
+
+            <div class="contact-information">
+                <p class="eyebrow">Fale conosco</p>
+                <h2>Como podemos ajudar?</h2>
+
+                <p>
+                    Utilize o formulário ao lado para deixar sua
+                    mensagem. Será um prazer receber seu contato.
+                </p>
+
+                <div class="contact-highlight">
+                    <h3>EsporteIS</h3>
+                    <p>Mais movimento para os seus melhores momentos.</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+
+                <h2>Envie sua mensagem</h2>
+
+                <label for="nome">Nome</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+                <label for="assunto">Assunto</label>
+                <input
+                    type="text"
+                    id="assunto"
+                    name="assunto"
+                    placeholder="Qual é o assunto?"
+                    required
+                >
+
+                <label for="mensagem-contato">Mensagem</label>
+                <textarea
+                    id="mensagem-contato"
+                    name="mensagem"
+                    rows="5"
+                    placeholder="Escreva sua mensagem..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="button button--primary">
+                    Enviar mensagem
+                </button>
+
+                <p id="contact-feedback" role="status"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand brand--footer" href="index.html">
+            Esporte<span>IS</span>
+        </a>
+
+        <p>Mais movimento para os seus melhores momentos.</p>
+
+        <nav aria-label="Links do rodapé">
+            <a href="tenis.html">Tênis</a>
+            <a href="camisas.html">Camisas</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <small>&copy; 2026 EsporteIS. Todos os direitos reservados.</small>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("contact-feedback").textContent =
+                "Mensagem enviada! Obrigado!";
+        });
+    </script>
+    <script>
+    const usuario = localStorage.getItem('usuarioLogado');
+    const nav = document.getElementById('nav-actions');
+
+    if (usuario && nav) {
+        nav.innerHTML = `
+            <a class="button button--quiet" href="dashboard/index.html">
+                Meu painel
+            </a>
+
+            <button class="button button--primary" onclick="
+                localStorage.removeItem('usuarioLogado');
+                window.location.href='index.html';
+            ">
+                Sair
+            </button>
+        `;
+    }
+    </script>
+
+</body>
+</html>
