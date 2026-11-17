@@ -1,24 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tênis | EsporteIS</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="catalog-page">
+
   <header class="site-header">
     <nav class="site-nav" aria-label="Navegação principal">
+
       <a class="brand" href="index.html">Esporte<span>IS</span></a>
+
       <ul class="menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="tenis.html" aria-current="page">Tênis</a></li>
         <li><a href="camisas.html">Camisas</a></li>
       </ul>
-      <div class="nav-actions">
+
+      <div class="nav-actions" id="nav-actions">
         <a class="button button--quiet" href="login.html">Entrar</a>
         <a class="button button--primary" href="cadastro.html">Criar conta</a>
       </div>
+
     </nav>
   </header>
 
@@ -27,6 +35,7 @@
   </div>
 
   <main class="content-section catalog-section">
+
     <div class="section-heading">
       <div>
         <p class="eyebrow">Performance e conforto</p>
@@ -36,18 +45,41 @@
     </div>
 
     <section class="products" aria-label="Produtos de tênis">
+
       <article class="card">
-        <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Tênis esportivo Nike"></figure>
+        <figure>
+          <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Tênis esportivo Nike">
+        </figure>
+
         <div class="card-body">
           <p class="product-category">Tênis</p>
           <h2 class="card-title">Tênis Nike</h2>
           <p>Conforto e estilo para acompanhar sua rotina esportiva.</p>
+
           <div class="card-actions">
             <button class="button button--primary" type="button">Comprar</button>
           </div>
         </div>
       </article>
+
     </section>
+
   </main>
+
+  <script>
+    const usuario = localStorage.getItem('usuarioLogado');
+    const nav = document.getElementById('nav-actions');
+
+    if (usuario && nav) {
+      nav.innerHTML = `
+        <a class="button button--quiet" href="dashboard/index.html">Meu painel</a>
+        <button class="button button--primary" onclick="
+          localStorage.removeItem('usuarioLogado');
+          window.location.href='index.html';
+        ">Sair</button>
+      `;
+    }
+  </script>
+
 </body>
 </html>
