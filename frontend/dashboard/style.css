@@ -299,6 +299,11 @@ a {
 }
 
 
+#vitrine-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 .produtos {
   margin-top: 52px;
 }
@@ -324,6 +329,10 @@ a {
   background: #fff;
   border: 1px solid #e3e8df;
   border-radius: 8px;
+  gap: 10px;
+}
+.card-produtos{
+  margin-bottom: 10px;
 }
 
 .produto-card img {

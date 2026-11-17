@@ -33,17 +33,34 @@
       "email": "isaac@gmail.com",
       "senha": "7654321",
       "id": "f29liKV"
+    },
+    {
+      "nome": "cauã",
+      "cpf": "151688456",
+      "endereco": "senac",
+      "email": "caua@gmail.com",
+      "senha": "123",
+      "id": "aCnYXPX"
+    },
+    {
+      "nome": "cauã",
+      "cpf": "151688456",
+      "endereco": "senac",
+      "email": "caua@gmail.com",
+      "senha": "123",
+      "id": "tlF0FBr"
+    },
+    {
+      "nome": "cauã",
+      "cpf": "151688456",
+      "endereco": "senac",
+      "email": "caua@gmail.com",
+      "senha": "123",
+      "id": "YdMr6ul"
     }
   ],
   "produtos": [
-    {
-      "id": "1",
-      "nome": "Camiseta",
-      "descricao": "Camiseta de algodão",
-      "preco": 199.99,
-      "quantidade": 10,
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4JUhcSsFM4HvSJmTYa4_Kyt76RJrMFPBXTfo0QMs59Q&s"
-    }
+
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }

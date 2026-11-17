@@ -27,7 +27,7 @@ async function cadastrar() {
         
         if(resposta.ok) {
         document.getElementById('mensagem').innerText = 'Cadastro realizado com sucesso!';
-         window.location.href = 'admin/index.html';
+         window.location.href = 'index.html';
         }
         else{
         document.getElementById('mensagem').innerText = 'Erro ao realizar cadastro.';

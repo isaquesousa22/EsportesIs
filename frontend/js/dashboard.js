@@ -39,10 +39,13 @@ async function carregarVitrine() {
 
         const vitrine = document.getElementById('vitrine-produtos');
         vitrine.innerHTML = ''; 
+    
 
         listaProdutos.forEach(produto => {
+
             const card = `
                 <div class="produto">
+                
                     <div class="img">
                         <img src="${produto.url}" alt="${produto.nome}">
                     </div>
@@ -54,7 +57,11 @@ async function carregarVitrine() {
                     <button class="btn btn-carrinho" onclick="adicionarAoCarrinho('${produto.id}')">
                         Carrinho
                     </button>
+            
                 </div>
+
+            
+            
             `;
 
             vitrine.innerHTML += card;

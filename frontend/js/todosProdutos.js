@@ -24,7 +24,7 @@ async function carregarProdutos() {
                     </td>
                 </tr>
             `;
-            // Adiciona a linha dentro da tabela
+            
             tabela.innerHTML += linha;
         });
     } catch (erro) {
