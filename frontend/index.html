@@ -1,102 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja - EsporteIS</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-
+  <meta name="theme-color" content="#455230">
+  <meta name="description" content="Encontre produtos esportivos para acompanhar seu ritmo na EsporteIS.">
+  <title>EsporteIS | Equipamentos para ir mais longe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="text-white">
-
-  <nav class="p-4 bg-black border-b border-gray-700 flex justify-between items-center">
-    <ul class="menu menu-horizontal flex gap-4 items-center">
-      <li class="text-xl font-bold">
-        <a class="btn btn-ghost normal-case text-xl text-white hover:text-red-500">EsporteIS</a>
-      </li>
-      <li><a class="btn btn-ghost text-white hover:text-red-500" href="tenis.html">Tênis</a></li>
-      <li><a class="btn btn-ghost text-white hover:text-red-500" href="camisas.html">Camisas</a></li>
-    </ul>
-
-    <div class="flex items-center gap-3">
-
-    
-
-      <a href="cadastro.html" class="btn btn-primary" id="btnCadastrar">Cadastrar</a>
-      <a href="login.html" class="btn btn-primary" id="btnLogin">Login</a>
-    </div>
-  </nav>
-
-
-  <header class="text-center py-2 bg-red-600 text-white font-semibold rounded-xl mt-8">
-    <p class="text-xl">Frete grátis na primeira compra 🚚</p>
-  </header>
-
-
-  <div class="mt-8 flex justify-center">
-    <img class="rounded-xl w-full max-w-5xl" src="img/fundo.png" alt="fundo">
+<body class="home-page">
+  <div class="announcement">
+    <p>Frete grátis na primeira compra</p>
+    <a href="#destaques">Confira os destaques <span aria-hidden="true">→</span></a>
   </div>
 
- 
-  <header class="text-center py-2 bg-red-600 text-white font-semibold rounded-xl mt-8">
-    <p class="text-xl">Promoções</p>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a class="brand" href="index.html" aria-label="EsporteIS, página inicial">
+        Esporte<span>IS</span>
+      </a>
+
+      <ul class="menu">
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="tenis.html">Tênis</a></li>
+        <li><a href="camisas.html">Camisas</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="login.html" class="button button--quiet" id="btnLogin">Entrar</a>
+        <a href="cadastro.html" class="button button--primary" id="btnCadastrar">Criar conta</a>
+      </div>
+    </nav>
   </header>
 
-  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8 justify-items-center">
-    <div class="card bg-base-100 w-60 shadow-lg shadow-red-500/30 transition-transform duration-300 ease-in-out hover:scale-105">
-      <figure><img src="img_camisas/all_black.jpg" alt="Camisa Corinthians All Black" /></figure>
-      <div class="card-body">
-        <h2 class="card-title text-black">Camisa Corinthians All Black</h2>
-        <p class="text-gray-700">Edição especial em tecido respirável e design elegante.</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Comprar</button>
-          <button class="btn btn-primary">carrimho</button>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="img/fundo.png" alt="" fetchpriority="high">
+      <div class="hero-content">
+        <p class="eyebrow">Movimento que inspira</p>
+        <h1 id="hero-title">Seu próximo desafio começa aqui.</h1>
+        <p class="hero-copy">Encontre o equipamento certo para acompanhar cada treino, jogo e conquista.</p>
+        <div class="hero-actions">
+          <a class="button button--primary" href="#destaques">Ver produtos</a>
+          <a class="button button--outline" href="#categorias">Explorar categorias</a>
         </div>
       </div>
-    </div>
+      <span class="hero-mark" aria-hidden="true">ES / 01</span>
+    </section>
 
-    <div class="card bg-base-100 w-60 shadow-lg shadow-red-500/30 transition-transform duration-300 ease-in-out hover:scale-105">
-      <figure><img src="img_camisas/all_black.jpg" alt="Camisa Corinthians All Black" /></figure>
-      <div class="card-body">
-        <h2 class="card-title text-black">Camisa Corinthians All Black</h2>
-        <p class="text-gray-700">Versão premium, ideal para colecionadores.</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Comprar</button>
-          <button class="btn btn-primary">carrimho</button>
+    <section class="content-section category-section" id="categorias" aria-labelledby="categories-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Encontre seu ritmo</p>
+          <h2 id="categories-title">Explore por categoria</h2>
         </div>
+        <p>Escolha o que combina com o seu próximo movimento.</p>
       </div>
-    </div>
 
-    <div class="card bg-base-100 w-60 shadow-lg shadow-red-500/30 transition-transform duration-300 ease-in-out hover:scale-105">
-      <figure><img src="img_camisas/all_black.jpg" alt="Camisa Corinthians All Black" /></figure>
-      <div class="card-body">
-        <h2 class="card-title text-black">Camisa Corinthians All Black</h2>
-        <p class="text-gray-700">Modelo confortável e durável, edição limitada.</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Comprar</button>
-          <button class="btn btn-primary">carrimho</button>
+      <div class="category-grid">
+        <a class="category-card category-card--shoes" href="tenis.html">
+          <span class="category-index">01 / PERFORMANCE</span>
+          <span class="category-title">Tênis</span>
+          <span class="category-link">Ver categoria <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="category-card category-card--shirts" href="camisas.html">
+          <span class="category-index">02 / ESTILO ESPORTIVO</span>
+          <span class="category-title">Camisas</span>
+          <span class="category-link">Ver categoria <span aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
 
+    <section class="content-section featured-section" id="destaques" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Seleção EsporteIS</p>
+          <h2 id="featured-title">Destaque da loja</h2>
         </div>
+        <a class="text-link" href="camisas.html">Ver camisas <span aria-hidden="true">→</span></a>
       </div>
-    </div>
 
-    <div class="card bg-base-100 w-60 shadow-lg shadow-red-500/30 transition-transform duration-300 ease-in-out hover:scale-105">
-      <figure><img src="img_camisas/all_black.jpg" alt="Camisa Corinthians All Black" /></figure>
-      <div class="card-body">
-        <h2 class="card-title text-black">Camisa Corinthians All Black</h2>
-        <p class="text-gray-700">Desconto especial por tempo limitado.</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Comprar</button>
-          <button class="btn btn-primary">carrimho</button>
-        </div>
+      <div class="products">
+        <article class="card">
+          <figure class="product-image">
+            <img src="img_camisas/all_black.jpg" alt="Camisa Corinthians All Black" loading="lazy">
+            <span class="product-label">Edição especial</span>
+          </figure>
+          <div class="card-body">
+            <p class="product-category">Camisas</p>
+            <h3 class="card-title">Camisa Corinthians All Black</h3>
+            <p class="product-description">Edição especial em tecido respirável e design elegante.</p>
+            <div class="card-actions">
+              <button class="button button--primary" type="button">Comprar</button>
+              <button class="button button--secondary" type="button">Carrinho</button>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Script -->
-  <script src="script.js"></script>
+    <section class="shipping-banner" aria-labelledby="shipping-title">
+      <div>
+        <p class="eyebrow">Uma vantagem para começar</p>
+        <h2 id="shipping-title">Seu primeiro pedido tem frete grátis.</h2>
+        <p>Escolha seu próximo item e aproveite.</p>
+      </div>
+      <a class="button button--light" href="#destaques">Escolher produto <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand--footer" href="index.html">Esporte<span>IS</span></a>
+    <p>Mais movimento para os seus melhores momentos.</p>
+    <nav aria-label="Links do rodapé">
+      <a href="tenis.html">Tênis</a>
+      <a href="camisas.html">Camisas</a>
+      <a href="login.html">Entrar</a>
+      <a href="cadastro.html">Criar conta</a>
+    </nav>
+    <small>&copy; 2026 EsporteIS. Todos os direitos reservados.</small>
+  </footer>
 </body>
 </html>

@@ -1,53 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br"  data-theme="dracula">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja - EsporteIS</title>
-
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tênis | EsporteIS</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class=" text-white">
-
-     <nav class="p-4 bg-black border-b border-gray-700 shadow-lg shadow-purple-500/30">
-    <ul class="menu menu-horizontal flex gap-4 items-center">
-      <li class="text-xl font-bold">
-        <a class="btn btn-ghost normal-case text-xl text-white hover:text-red-500" href="index.html">EsporteIS</a>
-      </li>
-      <li><a class="btn btn-ghost text-white hover:text-red-500" href="tenis.html">Tênis</a></li>
-      <li><a class="btn btn-ghost text-white hover:text-red-500" href="camisas.html">Camisas</a></li>
-   
-       
-    </ul>
-       
-  </nav>
-
-  <header class="text-center py-2 bg-purple-600 text-white font-semibold rounded-xl mt-8">
-    <p class="text-xl">Hora da compra 🚚</p>
+<body class="catalog-page">
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a class="brand" href="index.html">Esporte<span>IS</span></a>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="tenis.html" aria-current="page">Tênis</a></li>
+        <li><a href="camisas.html">Camisas</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="button button--quiet" href="login.html">Entrar</a>
+        <a class="button button--primary" href="cadastro.html">Criar conta</a>
+      </div>
+    </nav>
   </header>
 
- <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8 justify-items-center">
-    
+  <div class="notice">
+    <p>Encontre o calçado ideal para seus próximos desafios.</p>
+  </div>
 
-    <div class="card bg-base-100 w-60 shadow-lg shadow-purple-500/30  transition-transform duration-300 ease-in-out hover:scale-105">
-      <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" /></figure>
-      <div class="card-body">
-        <h2 class="card-title text-black">Tênis nike</h2>
-        <p class="text-gray-700">Edição especial em tecido respirável e design elegante.</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Comprar</button>
-        </div>
+  <main class="content-section catalog-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Performance e conforto</p>
+        <h1>Tênis esportivos</h1>
       </div>
+      <p>Modelos para acompanhar seu ritmo em cada treino.</p>
     </div>
 
-  </section>
-
-
-
+    <section class="products" aria-label="Produtos de tênis">
+      <article class="card">
+        <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Tênis esportivo Nike"></figure>
+        <div class="card-body">
+          <p class="product-category">Tênis</p>
+          <h2 class="card-title">Tênis Nike</h2>
+          <p>Conforto e estilo para acompanhar sua rotina esportiva.</p>
+          <div class="card-actions">
+            <button class="button button--primary" type="button">Comprar</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
 </body>
 </html>

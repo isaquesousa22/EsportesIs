@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dracula">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,19 @@
   
 </head>
 
-<body>
+<body class="admin-page">
 
-    <nav class="navbar bg-primary text-primary-content">
+    <nav class="navbar">
 
-        <div class="flex-1">
+        <div class="admin-brand">
             <a >
                 Painel Administrativo
             </a>
         </div>
 
-        <div class="flex-none">
+        <div class="admin-logout">
 
-            <button class="btn " onclick="location.href='/frontend/index.html'">
+            <button class="btn" onclick="location.href='/frontend/index.html'">
                 Sair
             </button>
 
@@ -31,15 +31,14 @@
 
     </nav>
 
-    <div>
+    <main class="admin-content">
 
-        <h1>
+        <div class="admin-heading">
+            <p class="admin-eyebrow">Visão geral</p>
+            <h1>Bem-vindo Administrador</h1>
+        </div>
 
-            Bem-vindo Administrador
-
-        </h1>
-
-        <div>
+        <section class="admin-stats" aria-label="Resumo de solicitações">
 
             <div class="stat ">
 
@@ -89,38 +88,33 @@
 
             </div>
 
-        </div>
+        </section>
 
-        <div class="flex">
+        <section class="admin-section" aria-label="Ações administrativas">
+            <div class="admin-actions">
+                <a href="CadastroAdmin.html" class="btn">
+                    Cadastrar Administrador
+                </a>
+                <a href="CadastroProdutos.html" class="btn">
+                    Cadastrar Produtos
+                </a>
+                <a href="todosParceiros.html" class="btn">
+                    Todos os Parceiros
+                </a>
 
+            </div>
 
-            <a href="CadastroAdmin.html" class="btn ">
-                Cadastrar Administrador
-            </a>
+            <div class="admin-actions">
+                <a href="suporte.html" class="btn">
+                    Portal de suporte
+                </a>
+                <a href="perfil.html" class="btn">
+                    Meu perfil
+                </a>
+            </div>
+        </section>
 
-             <a href="CadastroProdutos.html" class="btn ">
-                Cadastrar Produtos
-            </a>
-
-
-
-            <a href="todosParceiros.html" class="btn ">
-                Todos os Parceiros
-            </a>
-
-        </div>
-
-        <div class=" flex ">
-             <a href="suporte.html" class="btn">
-                Portal de suporte
-            </a>
-
-            <a href="perfil.html" class="btn">
-                Meu perfil
-            </a>
-        </div>
-
-    </div>
+    </main>
     
     <script type="module" src="/src/js/adminGuard.js"></script>
     <script type="module" src="/src/js/admim.js"></script>

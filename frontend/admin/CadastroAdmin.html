@@ -1,49 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dracula">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastrar - EsporteIS</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../style.css">
 </head>
 
-<body class="min-h-screen flex items-center justify-center bg-red-950">
+<body class="form-page">
 
-  <form class="w-96 p-6 bg-base-200 rounded-xl shadow-lg" onsubmit="cadastrar(); return false;">
-    <h2 class="text-2xl text-center text-white mb-6 font-bold">Criar Conta</h2>
+  <form onsubmit="cadastrar(); return false;">
+    <h2>Criar Conta</h2>
 
-    <fieldset class="fieldset mb-4">
-      <legend class="fieldset-legend">Nome</legend>
-      <input id="nome" type="text" class="input input-bordered w-full" placeholder="Seu nome" required />
+    <fieldset>
+      <legend>Nome</legend>
+      <input id="nome" type="text" placeholder="Seu nome" required />
     </fieldset>
 
-     <fieldset class="fieldset mb-4">
-      <legend class="fieldset-legend">CPF</legend>
-      <input id="cpf" type="text" class="input input-bordered w-full" placeholder="Seu CPF" required />
+     <fieldset>
+      <legend>CPF</legend>
+      <input id="cpf" type="text" placeholder="Seu CPF" required />
     </fieldset>
 
-    <fieldset class="fieldset mb-4">
-      <legend class="fieldset-legend">Endereço</legend>
-      <input id="endereco" type="text" class="input input-bordered w-full" placeholder="Seu endereço" required />
+    <fieldset>
+      <legend>Endereço</legend>
+      <input id="endereco" type="text" placeholder="Seu endereço" required />
     </fieldset>
 
-    <fieldset class="fieldset mb-4">
-      <legend class="fieldset-legend">Email</legend>
-      <input id="emailCadastro" type="email" class="input input-bordered w-full" placeholder="Seu email" required />
+    <fieldset>
+      <legend>Email</legend>
+      <input id="emailCadastro" type="email" placeholder="Seu email" required />
     </fieldset>
 
-    <fieldset class="fieldset mb-6">
-      <legend class="fieldset-legend">Senha</legend>
-      <input id="senhaCadastro" type="password" class="input input-bordered w-full" placeholder="Senha" required />
+    <fieldset>
+      <legend>Senha</legend>
+      <input id="senhaCadastro" type="password" placeholder="Senha" required />
     </fieldset>
 
-    <div class="flex justify-between">
-      <a href="index.html" class="btn btn-neutral">Cancelar</a>
-      <button class="btn btn-primary" type="submit" >Salvar</button>
+    <div class="form-actions">
+      <a href="index.html" class="btn">Cancelar</a>
+      <button class="btn" type="submit">Salvar</button>
     </div>
 
-    <p id="mensagem" class="text-center mt-4"></p>
+    <p id="mensagem"></p>
   </form>
 
  <script src="/frontend/js/cadastroAdmin.js"></script>
