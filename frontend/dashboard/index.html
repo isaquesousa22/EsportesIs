@@ -42,8 +42,10 @@
                 <a href="index.html" class="btn"><span>⌂</span> Início</a>
 
                 <!-- Botão de Sair que vamos programar -->
-                <button id="btn-sair" class="btn botao-sair" onclick="location.href='/frontend/index.html'">
-                    <span>🚪</span> Sair
+                
+                <button id="btn-sair" class="btn botao-sair"
+                 onclick="localStorage.removeItem('usuarioLogado'); window.location.href='../index.html'">
+                 <span>🚪</span> Sair
                 </button>
             </nav>
         </aside>
